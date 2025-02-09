@@ -1,83 +1,74 @@
 <p align="center">
   <a href="https://nextjs-fastapi-starter.vercel.app/">
     <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
-    <h3 align="center">Digit Prediction with CNN</h3>
+    <h3 align="center">Smart Emoji AI</h3>
   </a>
 </p>
 
 <p align="center">A Next.js 14 project utilizing <a href="https://fastapi.tiangolo.com/">FastAPI</a> as the API backend.</p>
 
-<br/>
+---
 
-## Introduction
+## 🚀 Introduction
 
-This project predicts digit values from an uploaded image or a drawing panel. The frontend is built using **Next.js 14**, while **FastAPI** handles image processing and model inference. The CNN model is maintained in a separate [repository](https://github.com/arnon3339/nextjs-fastapi-emojiiai).
+**Smart Emoji AI** helps users pick emojis by predicting the best match based on their input text. The frontend is built using **Next.js 14**, while the backend API is powered by **FastAPI**. The NLP model used for emoji prediction is maintained in a separate [repository](https://github.com/arnon3339/emoji-model).
 
-## Demo
+## 🌍 Live Demo
 
-Live deployment: [mnist-project.vercel.app](https://nextjs-fastapi-emojiiai.vercel.app/)
+Check out the live deployment: [Smart Emoji AI](https://nextjs-fastapi-emojiiai.vercel.app/)
 
+## 📦 Deploy Your Own
 
-## Deploy Your Own
-
-You can clone & deploy this project to **Vercel** with one click:
+Deploy this project to **Vercel** with one click:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farnon3339%2Fnextjs-fastapi-emojiiai%2Ftree%2Fmain)
 
-## Developing Locally
+## 🛠️ Development Setup
 
-Clone this repository and set up the project with the following command:
+### 1️⃣ Clone the Repository
 
 ```bash
-npx create-next-app nextjs-fastapi --example "https://github.com/arnon3339/nextjs-fastapi-emojiiai"
+git clone https://github.com/arnon3339/nextjs-fastapi-emojiiai.git
+cd nextjs-fastapi-emojiiai
 ```
 
-### Getting Started
-
-First, create and activate a **virtual environment**:
+### 2️⃣ Set Up a Virtual Environment (Backend)
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # macOS/Linux
+venv\Scriptsctivate  # Windows
 ```
 
-Then, install dependencies:
+### 3️⃣ Install Dependencies
 
 ```bash
-npm install
-# or
-yarn
-# or
-pnpm install
+npm install  # or yarn or pnpm install
 ```
 
-Start the development server (Python dependencies will be installed automatically):
+### 4️⃣ Start the Development Server
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm run dev  # or yarn dev or pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+The **Next.js** frontend runs on [http://localhost:3000](http://localhost:3000).
+The **FastAPI** backend runs on [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-The **FastAPI** server will run on [http://127.0.0.1:8000](http://127.0.0.1:8000). You can modify the port in `package.json` (and also update `next.config.js`).
+If needed, modify the backend port in `package.json` and update `next.config.js` accordingly.
 
+## 📂 Project Repositories
 
-## Repositories
+- **Frontend & API:** [Smart Emoji AI](https://github.com/arnon3339/nextjs-fastapi-emojiiai)
+- **NLP Model:** [Emoji Prediction Model](https://github.com/arnon3339/emoji-model)
+- **Docker Deployment:** *(Coming soon!)*
 
-- **Deployment:** [mnist-project](https://github.com/arnon3339/nextjs-fastapi-emojiiai)  
-- **NPL Model:** [mnist-model](https://github.com/arnon3339/emoji-model)  
-- **Docker Deployment:** *(Coming soon)*
+## 📚 Learn More
 
-## Learn More
+Explore the technologies used in this project:
 
-To explore more about the technologies used in this project:
+- 📖 [Next.js Documentation](https://nextjs.org/docs) – Learn about Next.js features and API.
+- 🎓 [Next.js Interactive Tutorial](https://nextjs.org/learn)
+- ⚡ [FastAPI Documentation](https://fastapi.tiangolo.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
-- [FastAPI Documentation](https://fastapi.tiangolo.com/) - Learn about FastAPI features and API.
-
-For more details, check out the [Next.js GitHub repository](https://github.com/vercel/next.js/) – contributions and feedback are welcome!
+For contributions and feedback, check out the [Next.js GitHub repository](https://github.com/vercel/next.js/). Happy coding! 🚀
